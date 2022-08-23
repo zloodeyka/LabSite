@@ -21,7 +21,16 @@ html, body {
 
 .content {
   flex: 1 0 auto;
-  height: 80%;
+}
+
+.main_page_cover {
+  height: 1000px;
+  background-image: url("~/images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .footer {
@@ -30,7 +39,7 @@ html, body {
 
 
 .content .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -43,7 +52,6 @@ html, body {
     h1 {
         font-size: 150%;
         font-weight: 400;
-        color: #2d6da3;
         text-align: center;
     }
 

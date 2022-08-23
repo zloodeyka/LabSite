@@ -1,7 +1,7 @@
 .footer {
   display: block;
   width: 100%;
-  background: #327ab7;
+  background: #02669d;
   color: #eee;
   border-top: 20px solid rgba(0, 0, 0, 0.1);
 }
@@ -31,7 +31,7 @@ ul.footer li a {
     .footer ul.footer {
         flex-direction: row;
     }
-    
+
     ul.footer li {
         margin: 20px;
         width: 50%;
@@ -40,10 +40,10 @@ ul.footer li a {
 
 
 @media (min-width: 1280px) {
-  
+
     .footer ul.footer {
         width: 1270px;
     }
-    
-    
+
+
 }

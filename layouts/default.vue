@@ -1,8 +1,9 @@
 <template>
   <div id="root" class="dx-viewport">
-    <NavToolbarTop></NavToolbarTop>
     <div class="content">
       <div class="container">
+        <NavToolbarTop></NavToolbarTop>
+
         <Nuxt />
         <DxLoadPanel :position="position"
                      :visible="$store.state.loadingVisible"

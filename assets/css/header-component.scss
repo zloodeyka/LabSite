@@ -2,8 +2,6 @@
 .header-component {
     flex: 0 0 auto;
     z-index: 1;
-    box-shadow: 0 5px 0 #337ab7, 0 5px 2px #337ab7;
-    background: #327ab7;
 
     .dx-toolbar .dx-toolbar-item.menu-button > .dx-toolbar-item-content .dx-icon {
         color: lightblue;
@@ -17,7 +15,6 @@
     .dx-toolbar-items-container {
         display: flex;
         flex-direction: column-reverse;
-        background: #327ab7;
     }
 
     .dx-toolbar .dx-toolbar-item ul.name.dx-template-wrapper.dx-item-content.dx-toolbar-item-content li::marker {
@@ -60,7 +57,6 @@
 
         .dx-drawer {
             width: 100%;
-            background: #327ab7;
         }
 
         .header-component__name ul.name {
@@ -75,7 +71,6 @@
 
         .header-component__name a {
             text-decoration: none;
-            color: #327ab7;
         }
 
         .name h1 {
@@ -83,13 +78,11 @@
             text-transform: uppercase;
             font-weight: 400;
             width: 300px;
-            color: #0e62a9;
         }
 
         .name h2 {
           font-size: 120%;
           font-weight: 300;
-          color: #2d6da3;
         }
     }
 
@@ -112,7 +105,6 @@
     }
 
     .dx-button-mode-text .dx-icon {
-        color: #327ab7;
     }
 
     .dx-popover-wrapper .dx-popup-content {
@@ -156,7 +148,6 @@
     }
 
     .dx-popup-wrapper > .dx-overlay-content {
-        border: 1px solid #337ab7;
         -webkit-box-shadow: none;
         box-shadow: none;
         border-radius: 0;
@@ -221,7 +212,6 @@
     }
 
     .header-component .dx-toolbar .dx-toolbar-center .header-component__name a {
-        color: #337ab7;
     }
 
     .header-component .dx-toolbar .dx-toolbar-before {
@@ -231,7 +221,6 @@
     }
 
     .header-component .dx-toolbar .dx-toolbar-center {
-        background: #327ab7;
         height: 100px;
         width: 250px;
     }
@@ -284,7 +273,6 @@
 
     .header-component {
         margin-bottom: 0;
-        box-shadow: 0 5px 0 #337ab7, 0 5px 2px #337ab7;
     }
 
     .header-component .dx-toolbar .dx-toolbar-center {
@@ -302,15 +290,13 @@
 
     .header-component .dx-toolbar .dx-toolbar-center .name h1 {
         width: auto;
-        color: #0e62a9;
     }
 
     .header-component .dx-toolbar .dx-toolbar-center .header-component__name a {
-        color: #327ab7;
+      color: #35495e;
     }
 
     .header-component .dx-button-mode-text .dx-icon {
-        color: #327ab7;
     }
 
      .layout-body.dx-drawer-opened {
@@ -346,7 +332,6 @@
    .header-component__header-toolbar .dx-toolbar-items-container {
         justify-content: space-between;
         height: 60px;
-        background: #327ab7;
         align-items: center;
     }
 
@@ -369,7 +354,6 @@
     .header-component .dx-toolbar {
         width: 100%;
         margin: 0 auto;
-        background-color: #327ab7;
         color: #fff;
     }
 
@@ -431,7 +415,7 @@
     }
 
     .dx-toolbar .dx-toolbar-center .name h1 {
-        color: #fff;
+        color: #b6b2b2;
         width: auto;
     }
 }

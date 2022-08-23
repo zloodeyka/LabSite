@@ -7,10 +7,10 @@
         <template #default>
           <div class="header-component__logo">
             <ul>
-              <li class="small ru"><a v-if="$i18n.locale == 'ru'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu.png"></a></li>
-              <li class="large ru"><a v-if="$i18n.locale == 'ru'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large.png"></a></li>
-              <li class="small en"><a v-if="$i18n.locale == 'en'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-en.png"></a></li>
-              <li class="large en"><a v-if="$i18n.locale == 'en'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large-en.png"></a></li>
+              <li class="small ru"><a v-if="$i18n.locale == 'RU'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu.png"></a></li>
+              <li class="large ru"><a v-if="$i18n.locale == 'RU'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large.png"></a></li>
+              <li class="small en"><a v-if="$i18n.locale == 'EN'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-en.png"></a></li>
+              <li class="large en"><a v-if="$i18n.locale == 'EN'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large-en.png"></a></li>
             </ul>
           </div>
         </template>
@@ -21,32 +21,9 @@
               locate-in-menu="never">
         <template #default>
           <div class="header-component__name">
-            {{$t('WebsiteTitle')}}
-          </div>
-        </template>
-      </DxItem>
-
-
-      <DxItem location="center"
-              locate-in-menu="never">
-        <template #default>
-          <div class="header-component__menu-toggle">
-              <DxButton v-if="$auth.loggedIn"
-                    icon="menu"
-                    styling-mode="text"
-                    @click="toggleMenuFunc" />
-          </div>
-        </template>
-      </DxItem>
-
-      <DxItem location="after"
-              locate-in-menu="never">
-        <template #default>
-          <div class="header-component__user-panel" v-if="$auth.loggedIn">
-            <DxButton class="user-button"
-                      height="100%"
-                      styling-mode="text">
-            </DxButton>
+            <div class="name">
+              <NuxtLink :to="localePath('/')"><h1>{{$t('WebsiteTitle')}}</h1></NuxtLink></div>
+            <div class="name-lk" v-if="$auth.loggedIn"><NuxtLink :to="localePath('/')"><h2>{{$t('FurtherEduOffice')}}</h2></NuxtLink></div>
           </div>
         </template>
       </DxItem>
@@ -70,9 +47,7 @@
                   <DxContextMenu
                                  :target="item.data.ClassNameTarget"
                                  :items="item.data.Items"
-                                 show-event="dxhoverstart"
-                                 hide-event="dxhoverend"
-                                 css-class="user-menu"
+                                 show-event="dxclick"
                                  :data-source="item.data.Items"
                                  accessKey="text">
                     <dx-position my="top center" at="bottom center" />
