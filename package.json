@@ -1,0 +1,51 @@
+{
+  "name": "UniverisFurtherEduOffice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "prod": "nuxt-ts --mode prod",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
+  },
+  "dependencies": {
+    "@hcaptcha/vue-hcaptcha": "^0.3.0",
+    "@nuxt/builder": "^2.15.6",
+    "@nuxt/content": "^1.15.1",
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxtjs/auth": "^4.5.1",
+    "@nuxtjs/auth-next": "5.0.0-1613647907.37b1156",
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/composition-api": "^0.20.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "bootstrap": "^5.0.1",
+    "core-js": "^3.22.6",
+    "devextreme": "^20.2.11",
+    "devextreme-vue": "20.2.6",
+    "jquery": "^3.6.0",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.21.1",
+    "popper.js": "^1.16.1",
+    "vue-carousel": "^0.18.0",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vueperslides": "^3.3.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@types/globalize": "^1.5.0",
+    "@types/jquery": "^3.5.14",
+    "fibers": "^5.0.1",
+    "sass": "^1.52.1",
+    "sass-loader": "^10.2.1"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
+  }
+}

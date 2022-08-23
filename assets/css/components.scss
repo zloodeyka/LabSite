@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto", verdana, sans-serif;
+    font-size: 100%;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+#root, .dx-viewport {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.side-nav-toolbar--top {
+    flex: 0 0 auto;
+}
+
+.content {
+  flex: 1 0 auto;
+  height: 80%;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+
+.content .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
+    h1 {
+        font-size: 150%;
+        font-weight: 400;
+        color: #2d6da3;
+        text-align: center;
+    }
+
+    .dx-field-label {
+        width: 30%;
+    }
+
+    .dx-field-value-static,
+    .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+        width: 65%;
+    }
+
+    .dx-field:nth-of-type(3) {
+        text-align: center;
+    }
+}
