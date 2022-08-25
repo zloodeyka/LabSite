@@ -43,11 +43,12 @@
                 <DxButton :class="item.data.ClassName"
                           height="100%"
                           styling-mode="text"
+                          @click="redirect(item.data.Path)"
                 :text="$t(item.data.Text)"/>
                   <DxContextMenu
                                  :target="item.data.ClassNameTarget"
                                  :items="item.data.Items"
-                                 show-event="dxclick"
+                                 show-event="dxhover"
                                  :data-source="item.data.Items"
                                  accessKey="text">
                     <dx-position my="top center" at="bottom center" />
@@ -114,10 +115,8 @@ export default class Header extends Vue {
 
   public treeViewRef = ref(null);
 
-  public onMenuItemClick(e: any): void{
-    var selectedItem = this.menuItems[e.itemIndex];
-    this.$router.push(this.localePath(selectedItem.Path))
-    this.toggleMenuFunc();
+  public redirect(pageName: any): void{
+    this.$router.push(this.localePath(pageName))
   }
 }
 </script>
