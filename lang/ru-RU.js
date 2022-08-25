@@ -28,5 +28,6 @@ export default {
   News: 'Новости',
   ResearchDirections: "Направления исследований",
   Publications: "Публикации",
-  Workshops: "Семинары"
+  Workshops: "Семинары",
+  Employees: "Сотрудники"
 }

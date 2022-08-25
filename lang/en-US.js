@@ -30,5 +30,6 @@ export default {
   News: 'News',
   ResearchDirections: "Research directions",
   Publications: "Publications",
-  Workshops: "Workshops"
+  Workshops: "Workshops",
+  Employees: "Employees"
 }

@@ -40,6 +40,7 @@
           >
             <template #item="item">
               <div>
+
                 <DxButton :class="item.data.ClassName"
                           height="100%"
                           styling-mode="text"
@@ -48,7 +49,8 @@
                   <DxContextMenu
                                  :target="item.data.ClassNameTarget"
                                  :items="item.data.Items"
-                                 show-event="dxhover"
+                                 show-event="dxhoverstart"
+                                 :hover-state-enabled="true"
                                  :data-source="item.data.Items"
                                  accessKey="text">
                     <dx-position my="top center" at="bottom center" />
@@ -103,8 +105,10 @@ export default class Header extends Vue {
       new ContextMenuItem(this.$t("Workshops").toString(), "Workshops")
       ]),
     new MenuItem("Education","Education", true),
-    new MenuItem("About","About", true),
-    new MenuItem("News","News", true)
+    new MenuItem("News","News", true),
+    new MenuItem("About","About", true, [
+      new ContextMenuItem(this.$t("Employees").toString(), "Employees")
+    ])
   ];
 
   @Prop()
