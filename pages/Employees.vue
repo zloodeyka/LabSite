@@ -1,6 +1,6 @@
 <template>
   <div class="employees-row">
-    <div v-for="item in companies">
+    <div v-for="item in employees">
       <EmployeeCard :employee="item"></EmployeeCard>
     </div>
   </div>
@@ -20,7 +20,7 @@ import EmployeeCard from '@/components/EmployeeCard.vue';
 })
 
 export default class Employees extends Vue {
-  private companies : any = EmployeesService.getCompanies();
+  private employees : any = EmployeesService.getEmployees();
 
 
 }

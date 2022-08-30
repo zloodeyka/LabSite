@@ -5,21 +5,6 @@
       <DxItem location="before"
               locate-in-menu="never">
         <template #default>
-          <div class="header-component__logo">
-            <ul>
-              <li class="small ru"><a v-if="$i18n.locale == 'RU'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu.png"></a></li>
-              <li class="large ru"><a v-if="$i18n.locale == 'RU'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large.png"></a></li>
-              <li class="small en"><a v-if="$i18n.locale == 'EN'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-en.png"></a></li>
-              <li class="large en"><a v-if="$i18n.locale == 'EN'" href="https://www.susu.ru/" target="_blank"><img src="@/assets/pic/logo-susu-large-en.png"></a></li>
-            </ul>
-          </div>
-        </template>
-      </DxItem>
-
-
-      <DxItem location="center"
-              locate-in-menu="never">
-        <template #default>
           <div class="header-component__name">
             <div class="name">
               <NuxtLink :to="localePath('/')"><h1>{{$t('WebsiteTitle')}}</h1></NuxtLink></div>
@@ -52,7 +37,8 @@
                                  show-event="dxhoverstart"
                                  :hover-state-enabled="true"
                                  :data-source="item.data.Items"
-                                 accessKey="text">
+                                 accessKey="text"
+                                 @item-click="itemClick">
                     <dx-position my="top center" at="bottom center" />
                   </DxContextMenu>
               </div>
@@ -121,6 +107,10 @@ export default class Header extends Vue {
 
   public redirect(pageName: any): void{
     this.$router.push(this.localePath(pageName))
+  }
+
+  public itemClick(e: any): void {
+    this.$router.push(this.localePath(e.itemData.value))
   }
 }
 </script>

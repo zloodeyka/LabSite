@@ -79,3 +79,84 @@ html, body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+/* -----------------------------------------------------------------------------------------------*/
+/* -------------------                Employee card          -------------------------------------*/
+/* -----------------------------------------------------------------------------------------------*/
+
+.no-avatar {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  border: 1px solid #d2d3d5;
+  background-image: url("static/profile-no-photo-gray.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.employee-card{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.employee-about{
+  width: 100%;
+  text-align: justify;
+  float: bottom;
+}
+
+.employee-avatar{
+  width: 30%;
+  float:left; /* add this */
+}
+
+.employee-info{
+  overflow: hidden; /* if you don't want #second to wrap below #first */
+  height: 200px;
+}
+
+.employee-fullname{
+  font-family: 'Roboto Condensed',Arial Narrow,Arial,Sans-serif;
+  text-rendering: optimizelegibility;
+  color: #02669d;
+  font-size: 32px;
+  letter-spacing: 6.4px;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  width: 500px;
+}
+
+.employee-position{
+  font-family: "Open Sans", Helvetica Neue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.employee-info ul{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+  text-align: left;
+  margin: 15px;
+}
+
+.employee-title .employee-degree{
+  font-family: "Open Sans", Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+.employee-presentation{
+  background: lightgrey;
+}

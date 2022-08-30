@@ -22,7 +22,7 @@
         display: none;
     }
 
-    .dx-toolbar-before, .dx-toolbar-center, .dx-toolbar-after {
+    .dx-toolbar-before, .dx-toolbar-before, .dx-toolbar-after {
         position: relative;
         display: flex;
     }
@@ -45,7 +45,7 @@
         }
     }
 
-    .dx-toolbar .dx-toolbar-center {
+    .dx-toolbar .dx-toolbar-before {
         margin: 0 !important;
         float: none !important;
         justify-content: center;
@@ -211,7 +211,7 @@
         width: 80px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .header-component__name a {
+    .header-component .dx-toolbar .dx-toolbar-before .header-component__name a {
     }
 
     .header-component .dx-toolbar .dx-toolbar-before {
@@ -220,12 +220,12 @@
         width: 100px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center {
+    .header-component .dx-toolbar .dx-toolbar-before {
         height: 100px;
         width: 250px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .name h1 {
+    .header-component .dx-toolbar .dx-toolbar-before .name h1 {
         color: #0e2566;
         width: 250px;
     }
@@ -275,7 +275,7 @@
         margin-bottom: 0;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center {
+    .header-component .dx-toolbar .dx-toolbar-before {
         height: 60px;
         background: #dbebfffff;
         width: auto;
@@ -288,11 +288,11 @@
         height: 80px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .name h1 {
+    .header-component .dx-toolbar .dx-toolbar-before .name h1 {
         width: auto;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .header-component__name a {
+    .header-component .dx-toolbar .dx-toolbar-before .header-component__name a {
       color: #0e2566;
     }
 
@@ -339,7 +339,7 @@
         box-shadow: none;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .header-component__name a {
+    .header-component .dx-toolbar .dx-toolbar-before .header-component__name a {
         color: #dbebff;
     }
 
@@ -374,11 +374,11 @@
         margin: 0;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center {
+    .header-component .dx-toolbar .dx-toolbar-before {
         background: transparent;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .name h1 {
+    .header-component .dx-toolbar .dx-toolbar-before .name h1 {
         color: #0e2566;
     }
 
@@ -391,7 +391,7 @@
         width: 350px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center {
+    .header-component .dx-toolbar .dx-toolbar-before {
         width: 300px;
     }
 
@@ -410,11 +410,11 @@
 
 @media (min-width: 1024px) {
 
-      .header-component .dx-toolbar .dx-toolbar-center {
+      .header-component .dx-toolbar .dx-toolbar-before {
         width: auto;
     }
 
-    .dx-toolbar .dx-toolbar-center .name h1 {
+    .dx-toolbar .dx-toolbar-before .name h1 {
         color: #b6b2b2;
         width: auto;
     }
@@ -427,11 +427,11 @@
         width: 210px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .name h1 {
+    .header-component .dx-toolbar .dx-toolbar-before .name h1 {
         //margin-left: -130px;
     }
 
-    .header-component .dx-toolbar .dx-toolbar-center .header-component__name .name-lk h2 {
+    .header-component .dx-toolbar .dx-toolbar-before .header-component__name .name-lk h2 {
         margin-right: 100px;
     }
 
